@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HSA Life Path (Prototype)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="page">
+      <div class="phone">
+        <!-- FRAME 1: START -->
+        <section id="frame-start" class="frame is-active" aria-label="Start screen">
+          <div class="start-content">
+            <h1 class="title">HSA LIFE PATH</h1>
+            <button id="btn-begin" class="btn btn-primary">Begin New Life</button>
+          </div>
+        </section>
+
+        <!-- FRAME 2: HOW TO PLAY -->
+        <section id="frame-howto" class="frame" aria-label="How to play">
+          <header class="topbar">
+            <div class="topbar-left">How to Play</div>
+            <div class="topbar-right">
+              <span class="icon" aria-hidden="true">🖼️</span>
+              <span class="icon" aria-hidden="true">⚙️</span>
+            </div>
+          </header>
+
+          <div class="content">
+            <h2 class="subtitle">Quick Overview</h2>
+
+            <div class="card">
+              <ol class="rules">
+                <li>You’ll get short life events (health, money, work).</li>
+                <li>You choose what to do (save, invest, pay medical costs).</li>
+                <li>Your stats change (health, stress, debt, savings).</li>
+                <li>This is a clickable prototype (3 screens).</li>
+              </ol>
+            </div>
+
+            <div class="card">
+              <p class="note">
+                HSAs are special because they can be used for medical expenses and (in many cases) can be invested for long-term growth.
+              </p>
+            </div>
+
+            <div class="actions">
+              <button id="btn-howto-back" class="btn btn-secondary">Back</button>
+              <button id="btn-howto-continue" class="btn btn-primary">Continue</button>
+            </div>
+          </div>
+
+          <footer class="bottombar" aria-label="Stats bar">
+            <div class="stat">❤️ Health: 90%</div>
+            <div class="stat">🧠 Stress: Low</div>
+            <div class="stat">💳 Debt: $0</div>
+            <div class="stat">💰 Savings: $0</div>
+          </footer>
+        </section>
+
+        <!-- FRAME 3: CHARACTER + STATS -->
+        <section id="frame-character" class="frame" aria-label="Character and stats">
+          <header class="topbar">
+            <div class="topbar-left">Life Event</div>
+            <div class="topbar-right">
+              <span class="icon" aria-hidden="true">🖼️</span>
+              <span class="icon" aria-hidden="true">⚙️</span>
+            </div>
+          </header>
+
+          <div class="content">
+            <div class="pill">You broke a bone!</div>
+
+            <div class="avatar">
+              <!-- Placeholder image box (swap later with a real img tag) -->
+              <div class="avatar-box">Character Image</div>
+            </div>
+
+            <div class="card quote">
+              “Luckily your parents paid for it and you made a full recovery!”
+            </div>
+
+            <div class="card profile">
+              <h3 class="profile-title">PROFILE</h3>
+
+              <div class="profile-row">
+                <div class="profile-label">Age:</div>
+                <div class="profile-value">8</div>
+              </div>
+              <div class="profile-row">
+                <div class="profile-label">Income:</div>
+                <div class="profile-value">None</div>
+              </div>
+              <div class="profile-row">
+                <div class="profile-label">Employment:</div>
+                <div class="profile-value">Birthday Money</div>
+              </div>
+
+              <div class="profile-notes">
+                <div class="profile-notes-label">NOTES:</div>
+                <div class="profile-notes-text">
+                  Health is phenomenal. Stress is low. Debt is low. Cash is low. Savings are low.
+                </div>
+              </div>
+            </div>
+
+            <button id="btn-invest" class="btn btn-primary btn-wide">Invest</button>
+
+            <div class="actions">
+              <button id="btn-character-back" class="btn btn-secondary">Back</button>
+              <button id="btn-character-next" class="btn btn-primary">Next (Demo)</button>
+            </div>
+          </div>
+
+          <footer class="bottombar" aria-label="Stats bar">
+            <div class="stat">❤️ Health: 90%</div>
+            <div class="stat">🧠 Stress: Low</div>
+            <div class="stat">💳 Debt: $0</div>
+            <div class="stat">💰 Savings: $0</div>
+          </footer>
+        </section>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

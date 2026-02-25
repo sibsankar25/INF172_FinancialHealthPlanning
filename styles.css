@@ -1,0 +1,243 @@
+:root {
+  --bg: #0f0f10;
+  --screen: #bfe4ff;
+  --btn: #5ccf63;
+  --btnText: #ffffff;
+  --card: rgba(255, 255, 255, 0.72);
+  --ink: #0b0b0c;
+  --muted: rgba(0,0,0,0.65);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+
+.page {
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(1200px 800px at 50% 20%, #2a2a2f, var(--bg));
+  padding: 24px;
+}
+
+.phone {
+  width: 390px;
+  height: 844px;
+  border-radius: 36px;
+  background: #111;
+  padding: 14px;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.55);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  background: var(--screen);
+  border-radius: 28px;
+  overflow: hidden;
+  display: none;
+  position: relative;
+}
+
+.frame.is-active { display: block; }
+
+.start-content {
+  height: 100%;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 28px;
+  padding: 28px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 44px;
+  letter-spacing: 1px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.btn {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  padding: 18px 22px;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: 800;
+  transition: transform 0.06s ease, filter 0.12s ease;
+}
+
+.btn:active { transform: translateY(1px) scale(0.99); }
+
+.btn-primary {
+  background: var(--btn);
+  color: var(--btnText);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.18), inset 0 0 0 3px rgba(255,255,255,0.7);
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.85);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,0.18);
+}
+
+.topbar {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  color: rgba(0,0,0,0.65);
+  font-weight: 800;
+}
+
+.topbar-right { display: flex; gap: 12px; }
+.icon { font-size: 20px; }
+
+.content {
+  padding: 10px 18px 90px;
+  height: calc(100% - 56px);
+  overflow: auto;
+}
+
+.subtitle {
+  margin: 10px 0 14px;
+  font-size: 26px;
+  color: var(--ink);
+}
+
+.card {
+  background: var(--card);
+  border-radius: 18px;
+  padding: 14px 14px;
+  margin-bottom: 14px;
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,0.10);
+}
+
+.rules {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.note {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.actions .btn { width: 100%; }
+
+.bottombar {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 72px;
+  background: rgba(255,255,255,0.55);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+  padding: 10px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.stat {
+  background: rgba(255,255,255,0.75);
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-weight: 850;
+  color: rgba(0,0,0,0.68);
+  font-size: 12px;
+  text-align: center;
+  padding: 6px;
+}
+
+/* Frame 3 elements */
+.pill {
+  margin: 8px auto 12px;
+  width: fit-content;
+  background: rgba(66, 140, 255, 0.45);
+  color: rgba(0,0,0,0.7);
+  font-weight: 900;
+  padding: 10px 14px;
+  border-radius: 999px;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  margin: 10px 0 14px;
+}
+
+.avatar-box {
+  width: 220px;
+  height: 220px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.75);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  color: rgba(0,0,0,0.55);
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,0.10);
+}
+
+.quote {
+  font-weight: 750;
+  color: rgba(0,0,0,0.65);
+}
+
+.profile-title {
+  text-align: center;
+  margin: 2px 0 12px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 950;
+  color: rgba(0,0,0,0.75);
+}
+
+.profile-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 6px;
+  border-top: 1px solid rgba(0,0,0,0.10);
+  color: rgba(0,0,0,0.68);
+  font-weight: 800;
+}
+
+.profile-row:first-of-type { border-top: none; }
+
+.profile-notes {
+  border-top: 1px solid rgba(0,0,0,0.10);
+  padding-top: 10px;
+  margin-top: 6px;
+}
+
+.profile-notes-label {
+  font-weight: 950;
+  color: rgba(0,0,0,0.68);
+  margin-bottom: 6px;
+}
+
+.profile-notes-text {
+  color: rgba(0,0,0,0.62);
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.btn-wide {
+  width: 100%;
+  margin: 10px 0 10px;
+}
