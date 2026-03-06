@@ -91,6 +91,7 @@ a:focus { outline: 2px solid rgba(59,130,246,0.55); outline-offset: 3px; }
 
 .nav-links {
   list-style: none;
+  text-align: center;
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -135,7 +136,7 @@ a:focus { outline: 2px solid rgba(59,130,246,0.55); outline-offset: 3px; }
 .section-subtitle {
   margin: 0;
   color: var(--muted);
-  max-width: 70ch;
+  max-width: 150ch;
 }
 
 /* Hero */
@@ -343,7 +344,24 @@ a:focus { outline: 2px solid rgba(59,130,246,0.55); outline-offset: 3px; }
 /* Table */
 .table-wrap { margin-top: 1rem; }
 
-.responsive-table { width: 100%; overflow-x: auto; border-radius: 16px; border: 1px solid var(--border); }
+.responsive-table {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+.responsive-table table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.responsive-table th,
+.responsive-table td {
+    width: 50%;
+    padding: 12px;
+    vertical-align: top;
+}
 
 table { width: 100%; border-collapse: collapse; min-width: 560px; background: rgba(232, 238, 252, 0.02); }
 
