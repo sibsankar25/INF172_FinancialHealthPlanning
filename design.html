@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HSA Life Path — Design Process</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">HSA Life Path</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="design.html" class="active">Design Process</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Research-to-Prototype Workflow</p>
+          <h1>Design Process</h1>
+          <p class="hero-sub">
+            Three rounds of user research, three prototype iterations. Here's how findings shaped every design decision.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#research">See Findings</a>
+            <a class="btn btn-ghost" href="#prototype">Final Prototype</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2 class="card-title">Problem Statement</h2>
+          <p class="card-text">
+            How might we design a simulation game that helps young adults understand the benefits of having an HSA and the importance of financial planning?
+          </p>
+          <div class="divider"></div>
+          <h3 class="card-title" style="font-size:0.95rem;">User Story</h3>
+          <p class="card-text">
+            As a game player, I want to make choices based on HSA-related simulation life events, so that I can be more knowledgeable about how HSA works to better plan my finances.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Steps -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Design Process</h2>
+          <p class="section-subtitle">A research-to-prototype workflow used to translate findings into concrete interaction decisions.</p>
+        </div>
+
+        <div class="timeline card">
+          <div class="timeline-step">
+            <div class="timeline-marker">1</div>
+            <div>
+              <h3>Research</h3>
+              <p>Identify student confusion points and baseline familiarity with HSAs through surveys.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-marker">2</div>
+            <div>
+              <h3>Synthesis</h3>
+              <p>Translate findings into problem statements, learning goals, and constraints.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-marker">3</div>
+            <div>
+              <h3>Prototype</h3>
+              <p>Create a clickable prototype showing the flow, core screens, and feedback loops.</p>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="timeline-marker">4</div>
+            <div>
+              <h3>Iteration</h3>
+              <p>Refine UI and game logic based on usability observations and feedback.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Rounds -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Research &amp; Findings</h2>
+          <p class="section-subtitle">Three rounds of surveys shaped the direction of each prototype iteration.</p>
+        </div>
+
+        <!-- Round 1 -->
+        <div class="card table-wrap" style="margin-bottom:1.25rem;">
+          <h3 class="card-title">Round 1 Survey (n = 26) → Prototype #1 Sketches</h3>
+          <p class="card-text subtle" style="margin-bottom:0.75rem;">Initial research identifying baseline knowledge gaps.</p>
+
+          <div class="grid-2" style="margin-bottom:1rem;">
+            <div class="proto-placeholder">
+              <span style="font-size:2rem;">✏️</span>
+              <span>Add sketch / low-fi screenshot here</span>
+            </div>
+            <div class="responsive-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Finding</th>
+                    <th>Design Decision</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Many don't know what an HSA is</td><td>Tutorial level + glossary tooltips</td></tr>
+                  <tr><td>Most don't have an HSA</td><td>Scenarios based on first job / benefits enrollment</td></tr>
+                  <tr><td>Lack of resources and understanding</td><td>Informative tips on how HSA can benefit you</td></tr>
+                  <tr><td>Healthcare costs feel anxious &amp; confusing</td><td>Explain costs and their financial planning impact</td></tr>
+                  <tr><td>Ideal session length is ~10 minutes</td><td>Adjust length of gameplay accordingly</td></tr>
+                  <tr><td>Design felt childish and unappealing</td><td>Change the color scheme and overall aesthetic</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Round 2 -->
+        <div class="card table-wrap" style="margin-bottom:1.25rem;">
+          <h3 class="card-title">Round 2 Survey (n = 10) → Prototype #2 Mid-Fi</h3>
+          <p class="card-text subtle" style="margin-bottom:0.75rem;">Testing initial designs and refining game mechanics.</p>
+
+          <div class="grid-2" style="margin-bottom:1rem;">
+            <div class="proto-placeholder">
+              <span style="font-size:2rem;">🖥️</span>
+              <span>Add mid-fi Figma screenshot here</span>
+            </div>
+            <div class="responsive-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Finding</th>
+                    <th>Design Decision</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Majority would play after seeing initial designs</td><td>Build prototype</td></tr>
+                  <tr><td>Would feel more knowledgeable after playing</td><td>No changes — continue with original requirements</td></tr>
+                  <tr><td>Proposed different college personas</td><td>Create student profiles with different backgrounds and scenarios</td></tr>
+                  <tr><td>Free stock investment option too complicated</td><td>Multiple-choice options only for decisions</td></tr>
+                  <tr><td>Wanted tracker comparing with/without HSA</td><td>Nice-to-have — flagged for future development</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Round 3 -->
+        <div class="card table-wrap">
+          <h3 class="card-title">Round 3 Survey (n = 6) → Final Hi-Fi Prototype</h3>
+          <p class="card-text subtle" style="margin-bottom:0.75rem;">Final usability feedback on the high-fidelity prototype.</p>
+
+          <div class="grid-2" style="margin-bottom:1rem;">
+            <div class="proto-placeholder">
+              <span style="font-size:2rem;">📱</span>
+              <span>Add hi-fi Figma screenshot here</span>
+            </div>
+            <div class="responsive-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Finding</th>
+                    <th>Design Decision</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Health keeps going down, hard to manage</td><td>Start at 90% health; boost health for some options</td></tr>
+                  <tr><td>Stress keeps increasing, hard to balance</td><td>Start with lower stress; increase stress reduction on options</td></tr>
+                  <tr><td>Bottom stats bar easy to ignore</td><td>Redesign stats bar — reorganize stats display</td></tr>
+                  <tr><td>Wanted a visible savings tracker in the game</td><td>Add savings stat at the top-right</td></tr>
+                  <tr><td>Piggy bank icon confusing for expenses</td><td>Replace with cash icon; use piggy bank for savings</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Prototype -->
+    <section id="prototype" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Final Prototype</h2>
+          <p class="section-subtitle">High-fidelity clickable prototype — click through the full game flow.</p>
+        </div>
+
+        <div class="card">
+          <p class="card-text subtle" style="margin-bottom:1rem;">If the embed doesn't load, use the Figma link below.</p>
+          <div class="iframe-wrap">
+            <iframe
+              title="HSA Life Path Final Prototype"
+              src="https://embed.figma.com/proto/LYA5RpGgOp7YdNDZ2Oj3NZ/Project?node-id=98-130&p=f&scaling=scale-down&content-scaling=fixed&page-id=97%3A23&starting-point-node-id=98%3A130&embed-host=share"
+              allowfullscreen loading="lazy"
+            ></iframe>
+          </div>
+          <a class="btn btn-primary full"
+            href="https://www.figma.com/proto/LYA5RpGgOp7YdNDZ2Oj3NZ/Project?node-id=98-130&starting-point-node-id=98%3A130"
+            target="_blank" rel="noopener">Open Figma Prototype ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Supporting Research -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Supporting Research</h2>
+          <p class="section-subtitle">Additional research artifacts to be filled in.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="card-title">Competitor Analysis</h3>
+            <div class="todo-card" style="margin-top:0.75rem;">
+              <span>🔍</span>
+              <p>Competitor analysis coming soon — add findings here.</p>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-title">User Persona</h3>
+            <div class="todo-card" style="margin-top:0.75rem;">
+              <span>👤</span>
+              <p>User persona coming soon — add details here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Limitations -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Limitations &amp; Next Steps</h2>
+          <p class="section-subtitle">What we couldn't do yet — and where we want to take this next.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3 class="card-title">Current Limitations</h3>
+            <ul class="bullets">
+              <li>Small sample size (n = 26 max) — findings are preliminary</li>
+              <li>Convenience sample may not generalize to all undergrads</li>
+              <li>HSA/no-HSA comparison tracker was not implemented</li>
+              <li>Prototype is not yet a fully functional game build</li>
+            </ul>
+            <p class="note"><strong>Note:</strong> Early-stage, preliminary findings; results may not generalize beyond the sample.</p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Future Plans</h3>
+            <ul class="future-list">
+              <li>
+                <div class="future-icon">📋</div>
+                <div class="future-text">
+                  <strong>Collect more survey responses</strong>
+                  <span>Expand beyond convenience sample</span>
+                </div>
+              </li>
+              <li>
+                <div class="future-icon">🧪</div>
+                <div class="future-text">
+                  <strong>Run usability tests</strong>
+                  <span>Structured sessions with think-aloud protocol</span>
+                </div>
+              </li>
+              <li>
+                <div class="future-icon">🔄</div>
+                <div class="future-text">
+                  <strong>Iterate prototype</strong>
+                  <span>Incorporate usability findings into next pass</span>
+                </div>
+              </li>
+              <li>
+                <div class="future-icon">🚀</div>
+                <div class="future-text">
+                  <strong>Plan MVP implementation</strong>
+                  <span>Build a playable coded version of the game</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-title">HSA Life Path</div>
+        <div class="footer-subtle">
+          Course: IN4MATX 172 ·
+          Team: Di-Yun Cheng, Russell Lin, Jackson Nguyen, Sibi Sankar ·
+          Year: Winter 2026
+        </div>
+      </div>
+      <a href="#" class="footer-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>

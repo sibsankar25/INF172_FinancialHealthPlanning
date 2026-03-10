@@ -1,486 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--
-    Financial Health Planning: HSA Learning Game
-    Landing page - static HTML/CSS/JS only (no dependencies)
-  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Financial Health Planning: HSA Learning Game</title>
-  <meta
-    name="description"
-    content="An early-stage undergraduate research and design project exploring how interactive gameplay can improve HSA understanding among college students."
-  />
-
+  <title>HSA Life Path — Home</title>
+  <meta name="description" content="A life simulator game helping college students understand Health Savings Accounts." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <!-- Sticky Header -->
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Go to top">
-        Financial Health Planning: HSA Learning Game
-      </a>
 
-      <nav class="nav" aria-label="Primary">
-        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-          <span class="nav-toggle-line"></span>
-          <span class="nav-toggle-line"></span>
-          <span class="nav-toggle-line"></span>
-        </button>
-
-        <ul class="nav-links" id="navLinks">
-          <li><a class="nav-link" href="#prototype">Prototype</a></li>
-          <li><a class="nav-link" href="#problem">Problem</a></li>
-          <li><a class="nav-link" href="#research">Research</a></li>
-          <li><a class="nav-link" href="#design">Design Process</a></li>
-          <li><a class="nav-link" href="#game">The Game</a></li>
-          <li><a class="nav-link" href="#next">Next Steps</a></li>
-        </ul>
-      </nav>
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">HSA Life Path</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="design.html">Design Process</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
   <main>
+
     <!-- Hero -->
     <section class="hero">
       <div class="container hero-grid">
-        <div class="hero-copy">
+        <div>
           <p class="eyebrow">Undergraduate Research + Design Project</p>
-          <h1>Financial Health Planning: HSA Learning Game</h1>
-          <p class="subtitle">
-            An early-stage undergraduate research and design project exploring how interactive gameplay can improve HSA understanding among college students.
+          <h1>HSA Life Path</h1>
+          <p class="hero-sub">
+            A life simulator game that allows users to better understand how to maximize their HSAs — through real-world decisions, simulated events, and instant feedback.
           </p>
-
           <div class="hero-actions">
             <a class="btn btn-primary" href="#prototype">View Prototype</a>
-            <a class="btn btn-ghost" href="#research">See Findings</a>
-          </div>
-
-          <div class="hero-meta">
-            <div class="meta-chip">Mobile-responsive</div>
-            
-            <div class="meta-chip">Static site</div>
+            <a class="btn btn-ghost" href="design.html">Design Process</a>
           </div>
         </div>
 
-        <div class="hero-card" aria-label="Project summary card">
+        <div class="card">
+          <h2 class="card-title">Project Summary</h2>
+          <p class="card-text">
+            An early-stage undergraduate research and design project exploring how interactive gameplay can improve HSA understanding among college students.
+          </p>
+          <div class="divider"></div>
+          <ul class="mini-list">
+            <li><span class="dot"></span> Audience: College Students</li>
+            <li><span class="dot"></span> Approach: Gamified Interactive Scenarios</li>
+            <li><span class="dot"></span> Status: Early-Stage Prototype</li>
+            <li><span class="dot"></span> Course: IN4MATX 172 · Winter 2026</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is HSA Life Path -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>What is HSA Life Path?</h2>
+          <p class="section-subtitle">A short informational game designed to introduce HSA concepts through play.</p>
+        </div>
+
+        <div class="grid-2">
           <div class="card">
-            <h2 class="card-title">Project Summary</h2>
+            <h3 class="card-title">The Game</h3>
             <p class="card-text">
-              This site documents the problem, preliminary findings, design process, and a prototype pitch for an educational game focused on Health Savings Accounts (HSAs).
+              HSA Life Path is a life simulator where users experience how to maximize their HSAs firsthand. Make decisions through different life events — affecting your health, finances, and wellbeing — and learn about HSA-eligible products along the way.
             </p>
-            <div class="divider"></div>
-            <ul class="mini-list">
-              <li><span class="dot"></span> Audience: College Students</li>
-              <li><span class="dot"></span> Approach: Gamified Interactive Scenarios + feedback</li>
-              <li><span class="dot"></span> Status: Early-Stage Prototype</li>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Key Features</h3>
+            <ul class="bullets">
+              <li>Simulated real-life events where HSA funds are applicable</li>
+              <li>Selectable options that affect in-game stats</li>
+              <li>"Did you know?" messages introducing HSA facts</li>
+              <li>Numerous examples of HSA-eligible products</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Motivation -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Our Motivation</h2>
+          <p class="section-subtitle">Why this project exists — and why it matters for students.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="callout">
+            <h3 class="card-title">The Problem</h3>
+            <p class="card-text">
+              HSA literacy among adults — especially college students — is low. As people graduate and start their careers, many become eligible for an HSA, but most have never been taught how one works.
+            </p>
+          </div>
+
+          <div class="callout">
+            <h3 class="card-title">Our Goal</h3>
+            <p class="card-text">
+              Better prepare college students for financial independence — through education about how HSAs work, how to maximize them, and what counts as HSA-eligible expenses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Stats -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Research Snapshot</h2>
+          <p class="section-subtitle">Preliminary survey of 26 undergraduate students.</p>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card card">
+            <div class="stat-number">61.2%</div>
+            <div class="stat-text">reported they don't know what an HSA is</div>
+          </article>
+          <article class="stat-card card">
+            <div class="stat-number">96.2%</div>
+            <div class="stat-text">reported they do not have an HSA</div>
+          </article>
+          <article class="stat-card card">
+            <div class="stat-number">88.5%</div>
+            <div class="stat-text">would be willing to play the game after seeing proposed designs</div>
+          </article>
+          <article class="stat-card card">
+            <div class="stat-number">80.8%</div>
+            <div class="stat-text">reported they don't have a solid understanding of HSAs</div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- Prototype -->
-    <section id="prototype" class="section section-alt">
+    <section id="prototype" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Prototype</h2>
-          <p class="section-subtitle">
-            High-fidelity clickable prototype alongside low-fidelity wireframes (to show design evolution).
-          </p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3 class="card-title">High-fidelity clickable prototype</h3>
-            <p class="card-text subtle">
-              If the embed doesn’t load, use the Figma link below (permissions can affect embeds).
-            </p>
-
-            <div class="iframe-wrap phone-frame" aria-label="Prototype embed">
-              <iframe
-                title="Figma Prototype Embed"
-                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLYA5RpGgOp7YdNDZ2Oj3NZ%2FProject%3Fnode-id%3D98-130%26starting-point-node-id%3D98%253A130"
-                loading="lazy"
-                allowfullscreen
-              ></iframe>
-            </div>
-
-            <a
-              class="btn btn-primary full"
-              href="https://www.figma.com/proto/LYA5RpGgOp7YdNDZ2Oj3NZ/Project?node-id=98-130&starting-point-node-id=98%3A130"
-              target="_blank"
-              rel="noopener"
-            >
-              Open Figma Prototype
-            </a>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">Our initial designs: Low-fidelity wireframes (screenshots)</h3>
-            
-
-            <div class="gallery">
-              <div class="gallery-card">
-                <div class="gallery-img real">
-                  <img src="assets/lowfi-1.png" alt="Low-fidelity wireframe 1" loading="lazy" />
-                </div>
-                <div class="gallery-label">Low-Fi Wireframe 1</div>
-              </div>
-
-              <div class="gallery-card">
-                <div class="gallery-img real">
-                  <img src="assets/lowfi-2.png" alt="Low-fidelity wireframe 2" loading="lazy" />
-                </div>
-                <div class="gallery-label">Low-Fi Wireframe 2</div>
-              </div>
-
-              <div class="gallery-card">
-                <div class="gallery-img real">
-                  <img src="assets/lowfi-3.png" alt="Low-fidelity wireframe 3" loading="lazy" />
-                </div>
-                <div class="gallery-label">Low-Fi Wireframe 3</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Problem -->
-    <section id="problem" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Problem</h2>
-          <p class="section-subtitle">
-            HSAs can be confusing—especially for students navigating insurance terms, tradeoffs, and first-time benefits decisions.
-          </p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3 class="card-title">Why this matters</h3>
-            <p class="card-text">
-              Health Savings Accounts (HSAs) are often presented alongside plan selection and employer benefits, but many undergraduates
-              have limited exposure to healthcare financing and related terminology. This can reduce confidence and lead to missed opportunities
-              to learn how HSAs work in practice.
-            </p>
-            <p class="card-text subtle">
-              Preliminary survey of 26 undergraduate students.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">Design goal</h3>
-            <p class="card-text">
-              Explore whether a lightweight, scenario-based learning game can improve familiarity with HSA concepts through repeated decision-making and feedback.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Research -->
-    <section id="research" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Research &amp; Findings</h2>
-          <p class="section-subtitle">
-            Preliminary results from an early-stage undergraduate survey exploring HSA awareness, adoption, and interest in a game-based learning approach.
-          </p>
-        </div>
-
-        <!-- Big stats -->
-        <div class="stats-grid">
-          <article class="stat-card card">
-            <div class="stat-number">61.2%</div>
-            <div class="stat-text">reported they don’t know what an HSA is</div>
-          </article>
-
-          <article class="stat-card card">
-            <div class="stat-number">96.2%</div>
-            <div class="stat-text">reported they do not have an HSA</div>
-          </article>
-
-          <article class="stat-card card">
-            <div class="stat-number">88.5%</div>
-            <div class="stat-text">reported they would be willing to play the game after seeing proposed designs</div>
-          </article>
-
-          <article class="stat-card card">
-            <div class="stat-number">80.8%</div>
-            <div class="stat-text">reported they don’t have a solid understanding of HSAs</div>
-          </article>
-        </div>
-
-        <!-- Two organized cards -->
-        <div class="research-meta-grid">
-          <div class="card">
-            <h3 class="card-title">Method</h3>
-            <ul class="bullets">
-              <li>Google Forms survey</li>
-              <li>Convenience sample of undergraduate students</li>
-              <li>n = 26</li>
-            </ul>
-
-            <p class="note">
-              <strong>Limitations:</strong> Early-stage, preliminary findings; results may not generalize.
-            </p>
-
-            <div class="divider"></div>
-
-            <p class="hint">
-              Interpretation (optional to add later): self-rated understanding skewed low (1–2) and interest in a game format was high,
-              supporting an educational intervention worth prototyping and testing.
-            </p>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">Key takeaway</h3>
-            <p class="card-text">
-              Results suggest low baseline familiarity and low adoption, with high willingness to engage with an interactive learning format.
-            </p>
-
-            <div class="divider"></div>
-
-            <ul class="bullets">
-              <li><strong>Knowledge gap:</strong> many students do not recognize or understand HSAs</li>
-              <li><strong>Adoption gap:</strong> most students do not have an HSA</li>
-              <li><strong>Engagement signal:</strong> students report willingness to try the game format</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Design Process -->
-    <section id="design" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Design Process</h2>
-          <p class="section-subtitle">
-            A simple research-to-prototype workflow used to translate findings into concrete interaction decisions.
-          </p>
-        </div>
-
-        <div class="timeline card">
-          <div class="timeline-step">
-            <div class="timeline-marker">1</div>
-            <div>
-              <h3>Research</h3>
-              <p>Identify student confusion points and baseline familiarity with HSAs.</p>
-            </div>
-          </div>
-
-          <div class="timeline-step">
-            <div class="timeline-marker">2</div>
-            <div>
-              <h3>Synthesis</h3>
-              <p>Translate findings into problem statements, learning goals, and constraints.</p>
-            </div>
-          </div>
-
-          <div class="timeline-step">
-            <div class="timeline-marker">3</div>
-            <div>
-              <h3>Prototype</h3>
-              <p>Create a clickable prototype showing the flow, core screens, and feedback loops. Shown below</p>
-            </div>
-          </div>
-
-          <div class="timeline-step">
-            <div class="timeline-marker">4</div>
-            <div>
-              <h3>Iteration</h3>
-              <p>Refine UI and game logic based on usability observations and feedback.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card table-wrap" aria-label="Findings to design decisions">
-          <h3 class="card-title">Findings → Design Decisions</h3>
-
-          <div class="responsive-table" role="region" aria-label="Responsive table" tabindex="0">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">1st survey round (n = 26)</th>
-                  <th scope="col">Design decision</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Many students don’t know what an HSA is</td>
-                  <td>Tutorial level + glossary tooltips</td>
-                </tr>
-                <tr>
-                  <td>Most students don’t have an HSA</td>
-                  <td>Scenarios based on first job / benefits enrollment</td>
-                </tr>
-                <tr>
-                  <td>Reasons for not having HSA was mainly lack of resources and understanding</td>
-                  <td>include informative tips on how HSA can benfit you in the game</td>
-                </tr>
-                <tr>
-                  <td>Students describe healthcare costs as Anxious, confusing, annoying.</td>
-                  <td>Include explanations on healthcare costs and their impact on financial planning.</td>
-                </tr>
-                <tr>
-                  <td>Students describe the ideal expereince would be not too long, about 10 minutes</td>
-                  <td>Adjust length of gaming accordingly</td>
-                </tr>
-                <tr>
-                  <td>Students describe design as childish and not aesthetically pleasing</td>
-                  <td>Change the color scheme and overall design aesthetic</td>
-                </tr>
-
-              </tbody>
-            </table>
-
-
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">2st survey round (n = 10)</th>
-                  <th scope="col">Design decision</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Majority of the students said they would play the game after looking at our initial designs</td>
-                  <td>Build prototype</td>
-                </tr>
-                <tr>
-                  <td>Majority of students said they would  feel more knowledgeable about the benefits of an HSA after playing</td>
-                  <td>No new changes needed continue with original requirements</td>
-                </tr>
-                <tr>
-                  <td>Students proposed idea of including different college personas</td>
-                  <td>Create different student profiles with different backgrounds and scenarios</td>
-                </tr>
-                <tr>
-                  <td>Some students said the idea of having free option to invest in stock was too complicated</td>
-                  <td>Create different multiple choice options for user to pick so its easy for them to decide</td>
-                </tr>
-                <tr>
-                  <td>Some students said wanted to be able to have a tracker that compares how you are doing with and without a HSA so you can see the difference</td>
-                  <td>Create a tracker that records users progress and compares it with and without a HSA</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">3st survey round (n = 6)</th>
-                  <th scope="col">Design decision</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Majority of the students said they think the theme of the website is dull, hard to navigate, and too much text</td>
-                  <td>Color change the website, deleting uncessary text, navigation car overhaul</td>
-                </tr>
-                <tr>
-                  <td>Majority of students said they were confused on the terminology</td>
-                  <td>No new changes </td>
-                </tr>
-                <tr>
-                  <td>Students proposed showcasing the game first</td>
-                  <td>Moved game to the top</td>
-                </tr>
-              </tbody>
-            </table>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-    <!-- The Game -->
-    <section id="game" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>The Game</h2>
-          <p class="section-subtitle">
-            A scenario-based learning game that uses decisions and feedback to teach HSA concepts in context.
-          </p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3 class="card-title">How it works</h3>
-            <p class="card-text">
-              Players make scenario-based decisions involving budgeting, simulated healthcare events, and plan tradeoffs.
-              The game provides visual feedback on HSA balance and out-of-pocket costs to show the consequences of choices over time.
-            </p>
-            <ul class="bullets">
-              <li>Scenario-based decisions</li>
-              <li>Budgeting and tradeoffs</li>
-              <li>Simulated healthcare events</li>
-              <li>Visual feedback on HSA balance and out-of-pocket costs</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">How it helps</h3>
-            <ul class="bullets">
-              <li>Build familiarity with terms</li>
-              <li>Increase confidence selecting plans</li>
-              <li>Learn by doing via consequences/feedback</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Next Steps -->
-    <section id="next" class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Next Steps</h2>
-          <p class="section-subtitle">
-            Planned work to strengthen the research basis and improve the prototype quality.
-          </p>
+          <p class="section-subtitle">High-fidelity clickable prototype — click through the full game flow.</p>
         </div>
 
         <div class="card">
-          <ul class="bullets bullets-lg">
-            <li>Collect more survey responses</li>
-            <li>Run usability tests</li>
-            <li>Iterate prototype</li>
-            <li>Plan MVP implementation</li>
-          </ul>
+          <p class="card-text subtle" style="margin-bottom:1rem;">
+            If the embed doesn't load, use the Figma link below (permissions can affect embeds).
+          </p>
 
-          <div class="divider"></div>
+          <div class="iframe-wrap">
+            <iframe
+              title="HSA Life Path Figma Prototype"
+              src="https://embed.figma.com/proto/LYA5RpGgOp7YdNDZ2Oj3NZ/Project?node-id=98-130&p=f&scaling=scale-down&content-scaling=fixed&page-id=97%3A23&starting-point-node-id=98%3A130&embed-host=share"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <a
+            class="btn btn-primary full"
+            href="https://www.figma.com/proto/LYA5RpGgOp7YdNDZ2Oj3NZ/Project?node-id=98-130&starting-point-node-id=98%3A130"
+            target="_blank" rel="noopener"
+          >Open Figma Prototype ↗</a>
         </div>
       </div>
     </section>
+
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <div class="footer-title">Financial Health Planning: HSA Learning Game</div>
+        <div class="footer-title">HSA Life Path</div>
         <div class="footer-subtle">
-          Course: <span class="footer-placeholder">IN4MATX 172</span> ·
-          Team: <span class="footer-placeholder">Di-Yun Cheng, Russell Lin, Jackson Huu Nguyen,Sibi Sankar, </span> ·
-          Year: <span class="footer-placeholder">WINTER 2026</span>
+          Course: IN4MATX 172 ·
+          Team: Di-Yun Cheng, Russell Lin, Jackson Nguyen, Sibi Sankar ·
+          Year: Winter 2026
         </div>
       </div>
-
-      <a class="footer-top" href="#top">Back to top ↑</a>
+      <a href="#" class="footer-top">Back to top ↑</a>
     </div>
   </footer>
 
-  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
-
-  <script src="script.js"></script>
 </body>
 </html>
