@@ -7,9 +7,9 @@
   --accent: #3b82f6;
 
   --bg: #0b1020;
-  --text: #e8eefc;
-  --muted: rgba(232, 238, 252, 0.72);
-  --faint: rgba(232, 238, 252, 0.55);
+  --text: #000000;
+  --muted: rgba(0, 0, 0, 0.72);
+  --faint: rgba(0, 0, 0, 0.55);
 
   --border: rgba(232, 238, 252, 0.12);
   --shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
@@ -46,7 +46,7 @@ a:focus { outline: 2px solid rgba(59,130,246,0.55); outline-offset: 3px; }
   top: 0;
   z-index: 50;
   backdrop-filter: blur(10px);
-  background: rgba(11, 16, 32, 0.75);
+  background: #C0E4FE;
   border-bottom: 1px solid var(--border);
 }
 
@@ -118,10 +118,10 @@ a:focus { outline: 2px solid rgba(59,130,246,0.55); outline-offset: 3px; }
 }
 
 /* Sections */
-.section { padding: 4.25rem 0; }
+.section { padding: 4.25rem 0; background: #C0E4FE;}
 
 .section-alt {
-  background: linear-gradient(180deg, rgba(232,238,252,0.03), rgba(232,238,252,0.01));
+  background: #C0E4FE;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
@@ -140,7 +140,7 @@ a:focus { outline: 2px solid rgba(59,130,246,0.55); outline-offset: 3px; }
 }
 
 /* Hero */
-.hero { padding: 4.25rem 0 3rem; }
+.hero { padding: 4.25rem 0 3rem; background: #C0E4FE;}
 
 .hero-grid {
   display: grid;
@@ -171,7 +171,7 @@ a:focus { outline: 2px solid rgba(59,130,246,0.55); outline-offset: 3px; }
 
 /* Cards */
 .card {
-  background: rgba(15, 23, 48, 0.72);
+  background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
@@ -318,7 +318,7 @@ a:focus { outline: 2px solid rgba(59,130,246,0.55); outline-offset: 3px; }
 .caption { margin-top: 0.4rem; color: var(--faint); font-size: 0.95rem; }
 
 /* Timeline */
-.timeline { display: grid; gap: 0.75rem; margin-bottom: 1rem; }
+.timeline { display: grid; gap: 0.5rem; margin-bottom: 1rem; }
 
 .timeline-step {
   display: grid;
@@ -328,12 +328,13 @@ a:focus { outline: 2px solid rgba(59,130,246,0.55); outline-offset: 3px; }
   border-radius: 16px;
   background: rgba(232, 238, 252, 0.03);
   border: 1px solid var(--border);
+  align-items: center; /* add this — vertically centers the number with the text */
 }
 
 .timeline-marker {
   width: 44px;
   height: 44px;
-  border-radius: 14px;
+  border-radius: 13px;
   display: grid;
   place-items: center;
   font-weight: 950;
@@ -410,7 +411,7 @@ th { color: var(--text); font-weight: 850; background: rgba(232, 238, 252, 0.04)
 .gallery-label { padding: 0.75rem 0.85rem; font-weight: 850; }
 
 /* Footer */
-.footer { padding: 2.25rem 0; border-top: 1px solid var(--border); background: rgba(11, 16, 32, 0.65); }
+.footer { padding: 2.25rem 0; border-top: 1px solid var(--border); background: #C0E4FE}
 
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
 
@@ -418,7 +419,7 @@ th { color: var(--text); font-weight: 850; background: rgba(232, 238, 252, 0.04)
 
 .footer-subtle { margin-top: 0.3rem; color: var(--faint); }
 
-.footer-placeholder { color: rgba(232,238,252,0.75); font-weight: 850; }
+.footer-placeholder { color: rgba(0, 0, 0, 0.75); font-weight: 850; }
 
 .footer-top { color: var(--muted); font-weight: 850; padding: 0.55rem 0.75rem; border-radius: 14px; border: 1px solid var(--border); background: rgba(232, 238, 252, 0.04); }
 
