@@ -167,7 +167,7 @@ a { color: inherit; text-decoration: none; }
   color: var(--blue-dark);
 }
 .card-text {
-  font-size: 1.02rem;
+  font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.85;
   color: var(--muted);
@@ -181,7 +181,6 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
   align-items: start;
-  
 }
 .split-text .card {
   background: transparent;
@@ -241,7 +240,7 @@ a { color: inherit; text-decoration: none; }
   border: 1.5px solid rgba(59,130,246,0.2);
 }
 .feature-text {
-  font-size: 0.98rem;
+  font-size: 1.05rem;
   line-height: 1.65;
   color: var(--muted);
   font-weight: 400;
@@ -378,14 +377,14 @@ a { color: inherit; text-decoration: none; }
   font-weight: 700;
   background: rgba(192,228,254,0.25);
   border-bottom: 1px solid var(--border);
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--blue-dark);
 }
 .responsive-table td {
   padding: 0.8rem 1rem;
   color: var(--muted);
   border-bottom: 1px solid rgba(0,0,0,0.05);
-  font-size: 0.9rem;
+  font-size: 1rem;
   vertical-align: top;
 }
 .responsive-table tr:last-child td { border-bottom: none; }
@@ -450,7 +449,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ── BULLETS ── */
 .bullets { margin: 0.65rem 0 0; padding-left: 1.15rem; color: var(--muted); }
-.bullets li { margin: 0.5rem 0; font-size: 0.97rem; line-height: 1.6; }
+.bullets li { margin: 0.5rem 0; font-size: 1.05rem; line-height: 1.6; }
 
 @media (max-width: 860px) {
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
@@ -459,13 +458,13 @@ a { color: inherit; text-decoration: none; }
 /* ── TEAM CARDS ── */
 .team-card-row {
   display: grid;
-  grid-template-columns: 72px 1fr;
+  grid-template-columns: 110px 1fr;
   gap: 1.25rem;
   align-items: center;
 }
 .team-avatar {
-  width: 72px;
-  height: 72px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -488,13 +487,13 @@ a { color: inherit; text-decoration: none; }
 }
 .team-desc {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 /* ── MINI LIST ── */
 .mini-list { margin: 0; padding-left: 0; list-style: none; color: var(--muted); }
-.mini-list li { display: flex; align-items: center; gap: 0.6rem; padding: 0.4rem 0; font-size: 0.95rem; }
+.mini-list li { display: flex; align-items: center; gap: 0.6rem; padding: 0.4rem 0; font-size: 1.05rem; }
 .dot {
   width: 9px; height: 9px;
   border-radius: 50%;

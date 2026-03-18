@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HSA Life Path — About</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .stat-bullet {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin: 0.55rem 0;
+        font-size: 0.97rem;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+      .stat-bullet::before {
+        content: '';
+        display: inline-block;
+        min-width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--blue-dark);
+        margin-top: 0.4rem;
+        flex-shrink: 0;
+      }
+    </style>
   </head>
 <body>
   
@@ -26,9 +47,6 @@
       <div class="container hero-grid">
         <div>
           <h1>Meet the Team</h1>
-          <p class="hero-sub">
-            Four students, one shared goal — making HSAs less intimidating for the next generation of workers entering the workforce.
-          </p>
         </div>
       </div>
     </section>
@@ -38,50 +56,27 @@
       <div class="container">
         <div class="section-head">
           <h2>About the Project</h2>
-          <p class="section-subtitle">The problem we set out to solve and how we approached it.</p>
         </div>
     
         <div class="grid-2">
           <div class="card">
             <h3 class="card-title">What we built</h3>
             <p class="card-text">
-              HSA Life Path is a scenario-based learning game designed to teach young adults the fundamentals of Health Savings Accounts. Players navigate simulated life events — from getting their first job to handling unexpected medical expenses — making decisions that affect health, stress, and savings in real time.
+              We built our game, HSA Life Path, with the goal of helping younger adults understand what Health Savings Accounts are. With our scenario-based simulation game, our users will be able to go through each stage of the game and make decisions that affect their character's health, stress, savings, HSA funds, and many more.
             </p>
           </div>
           <div class="card">
             <h3 class="card-title">Why we built it</h3>
-            <p class="card-text">
-              Our research showed that most undergraduates don't know what an HSA is, and almost none have one. Yet as they enter the workforce, these decisions matter. We wanted to create a low-stakes, engaging way to build that knowledge before it's needed.
+            <p class="card-text" style="margin-bottom:0.65rem;">
+              Our research showed that many of our target audience don't know what an HSA is and have no current HSA account.
             </p>
+            <div class="stat-bullet">More than 95% don't have an HSA</div>
+            <div class="stat-bullet">More than 60% don't know what an HSA is</div>
+            <div class="stat-bullet">Over 35% are anxious about health care costs</div>
+            <div class="stat-bullet">Over 25% are annoyed about health care costs</div>
           </div>
         </div>
     
-        <div class="callout" style="margin-top:1.25rem;">
-          <h3 class="card-title">IN4MATX 172 — User Interaction Software</h3>
-          <p class="card-text">
-            This project was created as part of an undergraduate research and design course at UC Irvine, focused on applying user-centered design methodologies to real-world problems. The team completed three rounds of user research and three prototype iterations over the course of Winter 2026.
-          </p>
-          <div style="margin-top:1rem;">
-            <a class="btn btn-primary" href="design.html">View Design Process</a>
-          </div>
-        </div>
-    
-      </div>
-    </section>
-    <!-- ── PROJECT INFO ── -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Project Info</h2>
-        </div>
-        <div class="card">
-          <ul class="mini-list">
-            <li><span class="dot"></span> Course: IN4MATX 172</li>
-            <li><span class="dot"></span> Type: Undergraduate Research &amp; Design</li>
-            <li><span class="dot"></span> Term: Winter 2026</li>
-            <li><span class="dot"></span> Institution: UC Irvine</li>
-          </ul>
-        </div>
       </div>
     </section>
 
@@ -90,7 +85,6 @@
       <div class="container">
         <div class="section-head">
           <h2>Team Members</h2>
-          <p class="section-subtitle">Each member brought a focused area of ownership to the project.</p>
         </div>
 
         <div style="display:grid; gap:1rem;">
@@ -100,7 +94,7 @@
             <div>
               <div class="team-role">Project Lead</div>
               <div class="team-name">Russell Lin</div>
-              <div class="team-desc">Organized and facilitated team meetings, maintained project timelines, and ensured alignment between research and design objectives across all three iterations. Also led public health–focused research on the target problem.</div>
+              <div class="team-desc">Organized and facilitated team meetings, maintained project timelines, and ensured project goals are achieved. Contributed to the overall project from project development to presentations and reports.</div>
             </div>
           </div>
 
@@ -109,7 +103,7 @@
             <div>
               <div class="team-role">Tech Lead</div>
               <div class="team-name">Sibi Sankar</div>
-              <div class="team-desc">Led website development across multiple iterations, overseeing technical implementation and contributing technical content for presentations.</div>
+              <div class="team-desc">Responsible for building the website and its iterations. Contributed to the overall project from project development to presentations and reports.</div>
             </div>
           </div>
 
@@ -118,7 +112,7 @@
             <div>
               <div class="team-role">UI/UX Lead</div>
               <div class="team-name">Di-Yun Cheng</div>
-              <div class="team-desc"> Led the visual and interaction design across all three prototype iterations, from low-fi sketches to the final high-fidelity Figma prototype. Also documented research results in the presentation and report.</div>
+              <div class="team-desc">Responsible for the UI/UX design and interactive design through three iterations of designs from low-fi to hi-fi prototypes. Contributed to the overall project from project development to presentations and reports.</div>
             </div>
           </div>
 
@@ -127,14 +121,13 @@
             <div>
               <div class="team-role">Research Lead</div>
               <div class="team-name">Jackson Nguyen</div>
-              <div class="team-desc">Designed and executed all three rounds of user surveys, synthesized findings into design decisions, and documented research. Developed the final powerpoint presentations.</div>
+              <div class="team-desc">Responsible for conducting initial research on topic and gathering user research data from our users. Contributed to the overall project from project development to presentations and reports.</div>
             </div>
           </div>
 
         </div>
       </div>
     </section>
-
 
   </main>
 
