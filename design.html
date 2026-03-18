@@ -21,28 +21,30 @@
 
   <main>
 
-    <!-- Hero -->
+    <!-- ── HERO ── -->
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">Research-to-Prototype Workflow</p>
           <h1>Design Process</h1>
           <p class="hero-sub">
             Three rounds of user research, three prototype iterations. Here's how findings shaped every design decision.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#research">See Findings</a>
-            <a class="btn btn-ghost" href="#prototype">Final Prototype</a>
-          </div>
         </div>
+      </div>
+    </section>
 
+    <!-- ── PROBLEM STATEMENT ── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Problem Statement</h2>
+        </div>
         <div class="card">
-          <h2 class="card-title">Problem Statement</h2>
           <p class="card-text">
             How might we design a simulation game that helps young adults understand the benefits of having an HSA and the importance of financial planning?
           </p>
           <div class="divider"></div>
-          <h3 class="card-title" style="font-size:0.95rem;">User Story</h3>
+          <h3 class="card-title" style="font-size:1rem; margin-bottom:0.5rem;">User Story</h3>
           <p class="card-text">
             As a game player, I want to make choices based on HSA-related simulation life events, so that I can be more knowledgeable about how HSA works to better plan my finances.
           </p>
@@ -50,14 +52,13 @@
       </div>
     </section>
 
-    <!-- Design Steps -->
+    <!-- ── DESIGN STEPS ── -->
     <section class="section section-alt">
       <div class="container">
         <div class="section-head">
           <h2>Design Process</h2>
           <p class="section-subtitle">A research-to-prototype workflow used to translate findings into concrete interaction decisions.</p>
         </div>
-
         <div class="timeline card">
           <div class="timeline-step">
             <div class="timeline-marker">1</div>
@@ -91,7 +92,7 @@
       </div>
     </section>
 
-    <!-- Research Rounds -->
+    <!-- ── RESEARCH ROUNDS ── -->
     <section id="research" class="section">
       <div class="container">
         <div class="section-head">
@@ -100,11 +101,10 @@
         </div>
 
         <!-- Round 1 -->
-        <div class="card table-wrap" style="margin-bottom:1.25rem;">
+        <div class="card" style="margin-bottom:1.25rem;">
           <h3 class="card-title">Round 1 Survey (n = 26) → Prototype #1 Sketches</h3>
           <p class="card-text subtle" style="margin-bottom:0.75rem;">Initial research identifying baseline knowledge gaps.</p>
-
-          <div class="grid-2" style="margin-bottom:1rem;">
+          <div class="grid-2">
             <div class="card">
               <h3 class="card-title">Low-Fi Wireframes</h3>
               <div class="gallery">
@@ -116,10 +116,7 @@
             <div class="responsive-table">
               <table>
                 <thead>
-                  <tr>
-                    <th>Finding</th>
-                    <th>Design Decision</th>
-                  </tr>
+                  <tr><th>Finding</th><th>Design Decision</th></tr>
                 </thead>
                 <tbody>
                   <tr><td>Many don't know what an HSA is</td><td>Tutorial level + glossary tooltips</td></tr>
@@ -135,13 +132,12 @@
         </div>
 
         <!-- Round 2 -->
-        <div class="card table-wrap" style="margin-bottom:1.25rem;">
+        <div class="card" style="margin-bottom:1.25rem;">
           <h3 class="card-title">Round 2 Survey (n = 10) → Prototype #2 Mid-Fi</h3>
           <p class="card-text subtle" style="margin-bottom:0.75rem;">Testing initial designs and refining game mechanics.</p>
-
-          <div class="grid-2" style="margin-bottom:1rem;">
+          <div class="grid-2">
             <div class="card">
-              <h3 class="card-title">Low-Fi Wireframes</h3>
+              <h3 class="card-title">Mid-Fi Wireframes</h3>
               <div class="gallery">
                 <img src="assets/Prototype Images/Mid fi/Mid fi 1.png" alt="Wireframe 1" />
                 <img src="assets/Prototype Images/Mid fi/Mid fi 2.png" alt="Wireframe 2" />
@@ -151,15 +147,12 @@
             <div class="responsive-table">
               <table>
                 <thead>
-                  <tr>
-                    <th>Finding</th>
-                    <th>Design Decision</th>
-                  </tr>
+                  <tr><th>Finding</th><th>Design Decision</th></tr>
                 </thead>
                 <tbody>
                   <tr><td>Majority would play after seeing initial designs</td><td>Build prototype</td></tr>
                   <tr><td>Would feel more knowledgeable after playing</td><td>No changes — continue with original requirements</td></tr>
-                  <tr><td>Proposed different college personas</td><td>Create student profiles with different backgrounds and scenarios</td></tr>
+                  <tr><td>Proposed different college personas</td><td>Create student profiles with different backgrounds</td></tr>
                   <tr><td>Free stock investment option too complicated</td><td>Multiple-choice options only for decisions</td></tr>
                   <tr><td>Wanted tracker comparing with/without HSA</td><td>Nice-to-have — flagged for future development</td></tr>
                 </tbody>
@@ -169,13 +162,12 @@
         </div>
 
         <!-- Round 3 -->
-        <div class="card table-wrap">
+        <div class="card">
           <h3 class="card-title">Round 3 Survey (n = 6) → Final Hi-Fi Prototype</h3>
           <p class="card-text subtle" style="margin-bottom:0.75rem;">Final usability feedback on the high-fidelity prototype.</p>
-
-          <div class="grid-2" style="margin-bottom:1rem;">
-             <div class="card">
-              <h3 class="card-title">Low-Fi Wireframes</h3>
+          <div class="grid-2">
+            <div class="card">
+              <h3 class="card-title">Hi-Fi Wireframes</h3>
               <div class="gallery">
                 <img src="assets/Prototype Images/Hi Fi/Hi Fi 1.png" alt="Wireframe 1" />
                 <img src="assets/Prototype Images/Hi Fi/Hi Fi 2.png" alt="Wireframe 2" />
@@ -186,14 +178,11 @@
             <div class="responsive-table">
               <table>
                 <thead>
-                  <tr>
-                    <th>Finding</th>
-                    <th>Design Decision</th>
-                  </tr>
+                  <tr><th>Finding</th><th>Design Decision</th></tr>
                 </thead>
                 <tbody>
                   <tr><td>Health keeps going down, hard to manage</td><td>Start at 90% health; boost health for some options</td></tr>
-                  <tr><td>Stress keeps increasing, hard to balance</td><td>Start with lower stress; increase stress reduction on options</td></tr>
+                  <tr><td>Stress keeps increasing, hard to balance</td><td>Start with lower stress; increase stress reduction</td></tr>
                   <tr><td>Bottom stats bar easy to ignore</td><td>Redesign stats bar — reorganize stats display</td></tr>
                   <tr><td>Wanted a visible savings tracker in the game</td><td>Add savings stat at the top-right</td></tr>
                   <tr><td>Piggy bank icon confusing for expenses</td><td>Replace with cash icon; use piggy bank for savings</td></tr>
@@ -202,11 +191,12 @@
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- Supporting Research -->
-    <section class="section">
+    <!-- ── SUPPORTING RESEARCH ── -->
+    <section class="section section-alt">
       <div class="container">
         <div class="section-head">
           <h2>Supporting Research</h2>
@@ -231,14 +221,13 @@
       </div>
     </section>
 
-    <!-- Limitations -->
-    <section class="section section-alt">
+    <!-- ── LIMITATIONS ── -->
+    <section class="section">
       <div class="container">
         <div class="section-head">
           <h2>Limitations &amp; Next Steps</h2>
           <p class="section-subtitle">What we couldn't do yet — and where we want to take this next.</p>
         </div>
-
         <div class="grid-2">
           <div class="card">
             <h3 class="card-title">Current Limitations</h3>
@@ -249,7 +238,6 @@
               <li>Prototype is not yet a fully functional game build</li>
             </ul>
           </div>
-
           <div class="card">
             <h3 class="card-title">Future Plans</h3>
             <ul class="future-list">
