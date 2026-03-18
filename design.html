@@ -66,7 +66,7 @@
         </div>
         <div class="card">
           <img
-            src="assets/Competetive Analysis Table.png"
+            src="assets/Competitive_Analysis_Table.png"
             alt="Competitive Analysis Table"
             style="width:100%; height:auto; border-radius:12px; display:block;"
           />
@@ -75,25 +75,29 @@
     </section>
 
     <!-- ── PERSONA ── -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Persona</h2>
-        </div>
-        <div class="card" style="margin-bottom:1.25rem;">
-          <p class="card-text">
-            We created a user persona to reflect on our user needs and requirements. Our character's name is Daniel. He is a current college student in his 2nd year of studies. He wants to learn more about HSA and related products. However, he finds current resources to be overwhelming and lack clear guidance on information related to HSA. We address his needs by creating a game.
-          </p>
-        </div>
-        <div class="card">
-          <img
-            src="assets/User Persona.png"
-            alt="User Persona - Daniel"
-            style="width:100%; height:auto; border-radius:12px; display:block;"
-          />
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Persona</h2>
+      </div>
+      <div class="card">
+        <div class="section-split" style="grid-template-columns: 35% 65%; align-items: start;">
+          <div class="split-text">
+            <p class="card-text" style="font-size:1.2rem; line-height:2.1;">
+  We created a user persona to reflect on our user needs and requirements. Our character's name is Daniel. He is a current college student in his 2nd year of studies. He wants to learn more about HSA and related products. However, he finds current resources to be overwhelming and lack clear guidance on information related to HSA. We address his needs by creating a game.
+</p>
+          </div>
+          <div class="split-image">
+            <img
+              src="assets/User Persona.png"
+              alt="User Persona - Daniel"
+              style="width:100%; max-width:100%; height:100%; object-fit:contain; border-radius:12px;"
+            />
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- ── RESEARCH ROUNDS ── -->
     <section id="research" class="section section-alt">
@@ -103,64 +107,54 @@
           <p class="section-subtitle">Three rounds of surveys shaped the direction of each prototype iteration.</p>
         </div>
 
-        <!-- Round 1 -->
-        <div class="card" style="margin-bottom:1.25rem;">
-          <h3 class="card-title">Round 1 Survey (n = 26) → Prototype #1 Sketches</h3>
-          <p class="card-text subtle" style="margin-bottom:0.75rem;">Initial research identifying baseline knowledge gaps.</p>
-          <div class="grid-2">
-            <div class="card">
-              <h3 class="card-title">Low-Fi Wireframes</h3>
-              <div class="gallery">
-                <img src="assets/Prototype Images/Initial Sketches/Sketch 1.png" alt="Wireframe 1" />
-                <img src="assets/Prototype Images/Initial Sketches/Sketch 2.png" alt="Wireframe 2" />
-                <img src="assets/Prototype Images/Initial Sketches/Sketch 3.png" alt="Wireframe 3" />
-              </div>
-            </div>
-            <div class="responsive-table">
-              <table>
-                <thead>
-                  <tr><th>Finding</th><th>Design Decision</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Many don't know what an HSA is</td><td>Tutorial level + glossary tooltips</td></tr>
-                  <tr><td>Most don't have an HSA</td><td>Scenarios based on first job / benefits enrollment</td></tr>
-                  <tr><td>Lack of resources and understanding</td><td>Informative tips on how HSA can benefit you</td></tr>
-                  <tr><td>Healthcare costs feel anxious &amp; confusing</td><td>Explain costs and their financial planning impact</td></tr>
-                  <tr><td>Ideal session length is ~10 minutes</td><td>Adjust length of gameplay accordingly</td></tr>
-                  <tr><td>Design felt childish and unappealing</td><td>Change the color scheme and overall aesthetic</td></tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
+    <!-- Round 1 -->
+    <div class="card" style="margin-bottom:1.25rem;">
+      <h3 class="card-title">Round 1 Survey (n = 26) → Prototype #1 Sketches</h3>
+      <p class="card-text subtle" style="margin-bottom:0.75rem;">Initial research identifying baseline knowledge gaps.</p>
+      <div class="gallery" style="margin-bottom:1rem; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+        <img src="assets/Prototype Images/Initial Sketches/Sketch 1.png" alt="Wireframe 1" style="aspect-ratio: 3/4; object-fit: contain; background: #f9f9f9; width: 100%;" />
+        <img src="assets/Prototype Images/Initial Sketches/Sketch 2.png" alt="Wireframe 2" style="aspect-ratio: 3/4; object-fit: contain; background: #f9f9f9; width: 100%;" />
+        <img src="assets/Prototype Images/Initial Sketches/Sketch 3.png" alt="Wireframe 3" style="aspect-ratio: 3/4; object-fit: contain; background: #f9f9f9; width: 100%;" />
+      </div>
+      <div class="responsive-table">
+        <table>
+          <thead>
+            <tr><th>Finding</th><th>Design Decision</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Many don't know what an HSA is</td><td>Tutorial level + glossary tooltips</td></tr>
+            <tr><td>Most don't have an HSA</td><td>Scenarios based on first job / benefits enrollment</td></tr>
+            <tr><td>Lack of resources and understanding</td><td>Informative tips on how HSA can benefit you</td></tr>
+            <tr><td>Healthcare costs feel anxious &amp; confusing</td><td>Explain costs and their financial planning impact</td></tr>
+            <tr><td>Ideal session length is ~10 minutes</td><td>Adjust length of gameplay accordingly</td></tr>
+            <tr><td>Design felt childish and unappealing</td><td>Change the color scheme and overall aesthetic</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
         <!-- Round 2 -->
         <div class="card" style="margin-bottom:1.25rem;">
-          <h3 class="card-title">Round 2 Survey (n = 10) → Prototype #2 Mid-Fi</h3>
+         <h3 class="card-title">Round 2 Survey (n = 10) → Prototype #2 Mid-Fi</h3>
           <p class="card-text subtle" style="margin-bottom:0.75rem;">Testing initial designs and refining game mechanics.</p>
-          <div class="grid-2">
-            <div class="card">
-              <h3 class="card-title">Mid-Fi Wireframes</h3>
-              <div class="gallery">
-                <img src="assets/Prototype Images/Mid fi/Mid fi 1.png" alt="Wireframe 1" />
-                <img src="assets/Prototype Images/Mid fi/Mid fi 2.png" alt="Wireframe 2" />
-                <img src="assets/Prototype Images/Mid fi/Mid fi 3.png" alt="Wireframe 3" />
-              </div>
-            </div>
-            <div class="responsive-table">
-              <table>
-                <thead>
-                  <tr><th>Finding</th><th>Design Decision</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Majority would play after seeing initial designs</td><td>Build prototype</td></tr>
-                  <tr><td>Would feel more knowledgeable after playing</td><td>No changes — continue with original requirements</td></tr>
-                  <tr><td>Proposed different college personas</td><td>Create student profiles with different backgrounds</td></tr>
-                  <tr><td>Free stock investment option too complicated</td><td>Multiple-choice options only for decisions</td></tr>
-                  <tr><td>Wanted tracker comparing with/without HSA</td><td>Nice-to-have — flagged for future development</td></tr>
-                </tbody>
-              </table>
-            </div>
+          <div class="gallery" style="margin-bottom:1rem; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+            <img src="assets/Prototype Images/Mid fi/Mid fi 1.png" alt="Wireframe 1" style="aspect-ratio: 3/4; object-fit: contain; background: #f9f9f9; width: 100%;" />
+            <img src="assets/Prototype Images/Mid fi/Mid fi 2.png" alt="Wireframe 2" style="aspect-ratio: 3/4; object-fit: contain; background: #f9f9f9; width: 100%;" />
+            <img src="assets/Prototype Images/Mid fi/Mid fi 3.png" alt="Wireframe 3" style="aspect-ratio: 3/4; object-fit: contain; background: #f9f9f9; width: 100%;" />
+          </div>
+          <div class="responsive-table">
+            <table>
+              <thead>
+                <tr><th>Finding</th><th>Design Decision</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Majority would play after seeing initial designs</td><td>Build prototype</td></tr>
+                <tr><td>Would feel more knowledgeable after playing</td><td>No changes — continue with original requirements</td></tr>
+                <tr><td>Proposed different college personas</td><td>Create student profiles with different backgrounds</td></tr>
+                <tr><td>Free stock investment option too complicated</td><td>Multiple-choice options only for decisions</td></tr>
+                <tr><td>Wanted tracker comparing with/without HSA</td><td>Nice-to-have — flagged for future development</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
@@ -168,30 +162,25 @@
         <div class="card">
           <h3 class="card-title">Round 3 Survey (n = 6) → Final Hi-Fi Prototype</h3>
           <p class="card-text subtle" style="margin-bottom:0.75rem;">Final usability feedback on the high-fidelity prototype.</p>
-          <div class="grid-2">
-            <div class="card">
-              <h3 class="card-title">Hi-Fi Wireframes</h3>
-              <div class="gallery">
-                <img src="assets/Prototype Images/Hi Fi/Hi Fi 1.png" alt="Wireframe 1" />
-                <img src="assets/Prototype Images/Hi Fi/Hi Fi 2.png" alt="Wireframe 2" />
-                <img src="assets/Prototype Images/Hi Fi/Hi Fi 3.png" alt="Wireframe 3" />
-                <img src="assets/Prototype Images/Hi Fi/Hi Fi 4.png" alt="Wireframe 4" />
-              </div>
-            </div>
-            <div class="responsive-table">
-              <table>
-                <thead>
-                  <tr><th>Finding</th><th>Design Decision</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Health keeps going down, hard to manage</td><td>Start at 90% health; boost health for some options</td></tr>
-                  <tr><td>Stress keeps increasing, hard to balance</td><td>Start with lower stress; increase stress reduction</td></tr>
-                  <tr><td>Bottom stats bar easy to ignore</td><td>Redesign stats bar — reorganize stats display</td></tr>
-                  <tr><td>Wanted a visible savings tracker in the game</td><td>Add savings stat at the top-right</td></tr>
-                  <tr><td>Piggy bank icon confusing for expenses</td><td>Replace with cash icon; use piggy bank for savings</td></tr>
-                </tbody>
-              </table>
-            </div>
+          <div class="gallery" style="margin-bottom:1rem; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
+            <img src="assets/Prototype Images/Hi Fi/Hi Fi 1.png" alt="Wireframe 1" style="aspect-ratio: 3/4; object-fit: contain; background: #f9f9f9; width: 100%;" />
+            <img src="assets/Prototype Images/Hi Fi/Hi Fi 2.png" alt="Wireframe 2" style="aspect-ratio: 3/4; object-fit: contain; background: #f9f9f9; width: 100%;" />
+            <img src="assets/Prototype Images/Hi Fi/Hi Fi 3.png" alt="Wireframe 3" style="aspect-ratio: 3/4; object-fit: contain; background: #f9f9f9; width: 100%;" />
+            <img src="assets/Prototype Images/Hi Fi/Hi Fi 4.png" alt="Wireframe 4" style="aspect-ratio: 3/4; object-fit: contain; background: #f9f9f9; width: 100%;" />
+          </div>
+          <div class="responsive-table">
+            <table>
+              <thead>
+                <tr><th>Finding</th><th>Design Decision</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Health keeps going down, hard to manage</td><td>Start at 90% health; boost health for some options</td></tr>
+                <tr><td>Stress keeps increasing, hard to balance</td><td>Start with lower stress; increase stress reduction</td></tr>
+                <tr><td>Bottom stats bar easy to ignore</td><td>Redesign stats bar — reorganize stats display</td></tr>
+                <tr><td>Wanted a visible savings tracker in the game</td><td>Add savings stat at the top-right</td></tr>
+                <tr><td>Piggy bank icon confusing for expenses</td><td>Replace with cash icon; use piggy bank for savings</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
@@ -219,31 +208,32 @@
             <h3 class="card-title">Future Plans</h3>
             <ul class="future-list">
               <li>
+                <div class="future-icon">🎮</div>
+                <div class="future-text">
+                  <strong>Personal customization</strong>
+                  <span style="display:block;">Avatar customization: Physical Features, Gender</span>
+                  <span style="display:block;">Custom starting salary, savings, health, stress level, etc.</span>
+                </div>
+              </li>
+              <li>
                 <div class="future-icon">📋</div>
                 <div class="future-text">
-                  <strong>Collect more survey responses</strong>
-                  <span>Expand beyond convenience sample</span>
+                  <strong>Additional scenarios</strong>
+                  <span>30+ scenarios + events with more information on HSA to expand user knowledge</span>
                 </div>
               </li>
               <li>
-                <div class="future-icon">🧪</div>
+                <div class="future-icon">📈</div>
                 <div class="future-text">
-                  <strong>Run usability tests</strong>
-                  <span>Structured sessions with think-aloud protocol</span>
+                  <strong>Investment options</strong>
+                  <span>Option to invest in stocks, mutual funds, and ETFs — real-life reflection of the stock market</span>
                 </div>
               </li>
               <li>
-                <div class="future-icon">🔄</div>
+                <div class="future-icon">⏱️</div>
                 <div class="future-text">
-                  <strong>Iterate prototype</strong>
-                  <span>Incorporate usability findings into next pass</span>
-                </div>
-              </li>
-              <li>
-                <div class="future-icon">🚀</div>
-                <div class="future-text">
-                  <strong>Plan MVP implementation</strong>
-                  <span>Build a playable coded version of the game</span>
+                  <strong>Expanded gameplay</strong>
+                  <span>Evolve from a 10 minute short game into an everyday game</span>
                 </div>
               </li>
             </ul>

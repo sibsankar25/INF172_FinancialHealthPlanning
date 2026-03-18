@@ -181,6 +181,7 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
   align-items: center;
+  
 }
 .split-text .card {
   background: transparent;
