@@ -15,6 +15,80 @@
       padding-left: 0;
       padding-right: 0;
     }
+
+    /* ── COMPETITIVE ANALYSIS TABLE ── */
+    .comp-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+    }
+    .comp-table thead tr {
+      background: rgba(192,228,254,0.25);
+      border-bottom: 2px solid var(--border);
+    }
+    .comp-table th {
+      padding: 0.85rem 1rem;
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--blue-dark);
+    }
+    .comp-table td {
+      padding: 1rem 1rem;
+      color: var(--muted);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      vertical-align: top;
+      line-height: 1.55;
+    }
+    .comp-table tbody tr:last-child td { border-bottom: none; }
+    .comp-table tbody tr:hover td { background: rgba(192,228,254,0.08); }
+    .comp-table tbody tr.our-project td { background: rgba(192,228,254,0.12); }
+    .comp-table tbody tr.our-project:hover td { background: rgba(192,228,254,0.2); }
+
+    .comp-solution-name {
+      display: block;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #1a1a2e;
+      margin-bottom: 2px;
+    }
+    .comp-solution-org {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--faint);
+      margin-bottom: 7px;
+    }
+    .comp-badge {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 5px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .badge-cert    { background: #e8f0fb; color: #2563c7; }
+    .badge-ai      { background: #e9f7ef; color: #1a7a4a; }
+    .badge-res     { background: #fff3e0; color: #b36200; }
+    .badge-project { background: rgba(192,228,254,0.5); color: var(--blue-dark); border: 1px solid rgba(26,111,168,0.2); }
+
+    .comp-cost {
+      font-weight: 700;
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+    .cost-paid { color: #c0392b; }
+    .cost-free { color: #1a7a4a; }
   </style>
 </head>
 <body>
@@ -64,12 +138,69 @@
         <div class="section-head">
           <h2>Competitor Analysis</h2>
         </div>
-        <div class="card">
-          <img
-            src="assets/Competitive_Analysis_Table.png"
-            alt="Competitive Analysis Table"
-            style="width:100%; height:auto; border-radius:12px; display:block;"
-          />
+        <div class="comp-table-wrap">
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>Solution</th>
+                <th>Type</th>
+                <th>Strengths</th>
+                <th>Weaknesses</th>
+                <th>Cost</th>
+                <th>Target Users</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="comp-solution-name">HSA Expert Certificate Course</span>
+                  <span class="comp-solution-org">America's Health Insurance Plans (AHIP)</span>
+                  <span class="comp-badge badge-cert">Certification</span>
+                </td>
+                <td>Online certification course</td>
+                <td>HSA knowledge depth, industry credibility, structured learning modules</td>
+                <td>High cost, short duration (2.5 hrs), not engaging</td>
+                <td><span class="comp-cost cost-paid">~$795–$1,005</span></td>
+                <td>Professionals seeking in-depth HSA knowledge</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="comp-solution-name">HSAnswers</span>
+                  <span class="comp-solution-org">Health Equity</span>
+                  <span class="comp-badge badge-ai">AI Chatbot</span>
+                </td>
+                <td>AI Chatbot</td>
+                <td>Easy access to HSA questions, convenient, quick answers</td>
+                <td>Limited engagement, passive learning only</td>
+                <td><span class="comp-cost cost-free">Free</span></td>
+                <td>General public seeking HSA-related knowledge</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="comp-solution-name">Fidelity</span>
+                  <span class="comp-solution-org">Fidelity</span>
+                  <span class="comp-badge badge-res">Resource Platform</span>
+                </td>
+                <td>Resource platform</td>
+                <td>Handful of useful HSA resources and materials for consumers</td>
+                <td>Limited engagement, no interactivity</td>
+                <td><span class="comp-cost cost-free">Free</span></td>
+                <td>Consumers interested in HSA-related knowledge</td>
+              </tr>
+              <tr class="our-project">
+                <td>
+                  <span class="comp-solution-name">HSA Life Path</span>
+                  <span class="comp-solution-org">Our Team</span>
+                  <span class="comp-badge badge-project">Our Project</span>
+                </td>
+                <td>Educational game on HSAs</td>
+                <td>Engaging, interactive simulated real-life HSA application</td>
+                <td>Could be improved with more in-game resources</td>
+                <td><span class="comp-cost cost-free">Free</span></td>
+                <td>Young adults interested in HSA</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
