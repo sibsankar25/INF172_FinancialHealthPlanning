@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HSA Life Path — Design Process</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Remove white card background for top-level section cards */
+    .section > .container > .card,
+    .section > .container > .card + .card {
+      background: transparent;
+      box-shadow: none;
+      border: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -27,7 +38,7 @@
         <div>
           <h1>Design Process</h1>
           <p class="hero-sub">
-            Three rounds of user research, three prototype iterations. Here's how findings shaped every design decision.
+            3 rounds of user research &amp; 3 rounds of design iterations
           </p>
         </div>
       </div>
@@ -41,59 +52,51 @@
         </div>
         <div class="card">
           <p class="card-text">
-            How might we design a simulation game that helps young adults understand the benefits of having an HSA and the importance of financial planning?
-          </p>
-          <div class="divider"></div>
-          <h3 class="card-title" style="font-size:1rem; margin-bottom:0.5rem;">User Story</h3>
-          <p class="card-text">
-            As a game player, I want to make choices based on HSA-related simulation life events, so that I can be more knowledgeable about how HSA works to better plan my finances.
+            How might we design a simulation game that helps young adults understand the benefits of having an HSA account and the importance of financial planning?
           </p>
         </div>
       </div>
     </section>
 
-    <!-- ── DESIGN STEPS ── -->
+    <!-- ── COMPETITOR ANALYSIS ── -->
     <section class="section section-alt">
       <div class="container">
         <div class="section-head">
-          <h2>Design Process</h2>
-          <p class="section-subtitle">A research-to-prototype workflow used to translate findings into concrete interaction decisions.</p>
+          <h2>Competitor Analysis</h2>
         </div>
-        <div class="timeline card">
-          <div class="timeline-step">
-            <div class="timeline-marker">1</div>
-            <div>
-              <h3>Research</h3>
-              <p>Identify student confusion points and baseline familiarity with HSAs through surveys.</p>
-            </div>
-          </div>
-          <div class="timeline-step">
-            <div class="timeline-marker">2</div>
-            <div>
-              <h3>Synthesis</h3>
-              <p>Translate findings into problem statements, learning goals, and constraints.</p>
-            </div>
-          </div>
-          <div class="timeline-step">
-            <div class="timeline-marker">3</div>
-            <div>
-              <h3>Prototype</h3>
-              <p>Create a clickable prototype showing the flow, core screens, and feedback loops.</p>
-            </div>
-          </div>
-          <div class="timeline-step">
-            <div class="timeline-marker">4</div>
-            <div>
-              <h3>Iteration</h3>
-              <p>Refine UI and game logic based on usability observations and feedback.</p>
-            </div>
-          </div>
+        <div class="card">
+          <img
+            src="assets/Competetive Analysis Table.png"
+            alt="Competitive Analysis Table"
+            style="width:100%; height:auto; border-radius:12px; display:block;"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PERSONA ── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Persona</h2>
+        </div>
+        <div class="card" style="margin-bottom:1.25rem;">
+          <p class="card-text">
+            We created a user persona to reflect on our user needs and requirements. Our character's name is Daniel. He is a current college student in his 2nd year of studies. He wants to learn more about HSA and related products. However, he finds current resources to be overwhelming and lack clear guidance on information related to HSA. We address his needs by creating a game.
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="assets/User Persona.png"
+            alt="User Persona - Daniel"
+            style="width:100%; height:auto; border-radius:12px; display:block;"
+          />
         </div>
       </div>
     </section>
 
     <!-- ── RESEARCH ROUNDS ── -->
-    <section id="research" class="section">
+    <section id="research" class="section section-alt">
       <div class="container">
         <div class="section-head">
           <h2>Research &amp; Findings</h2>
@@ -192,32 +195,6 @@
           </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- ── SUPPORTING RESEARCH ── -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <h2>Supporting Research</h2>
-          <p class="section-subtitle">Additional research artifacts to be filled in.</p>
-        </div>
-        <div class="grid-2">
-          <div class="card">
-            <h3 class="card-title">Competitor Analysis</h3>
-            <div class="todo-card" style="margin-top:0.75rem;">
-              <span>🔍</span>
-              <p>Competitor analysis coming soon — add findings here.</p>
-            </div>
-          </div>
-          <div class="card">
-            <h3 class="card-title">User Persona</h3>
-            <div class="todo-card" style="margin-top:0.75rem;">
-              <span>👤</span>
-              <p>User persona coming soon — add details here.</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
